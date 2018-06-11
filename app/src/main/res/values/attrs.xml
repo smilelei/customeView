@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="myCircle">
+        <attr name="myGravity">
+            <flag name="left" value="0"/>
+            <flag name="top" value="1"/>
+            <flag name="center" value="2"/>
+            <flag name="right" value="3"/>
+            <flag name="bottom" value="4"/>
+        </attr>
+        <attr name="myRadious" format="dimension"/>
+        <attr name="myProgress" format="integer"/>
+        <attr name="myBg" format="color"/>
+        <attr name="myProBg" format="color"/>
+    </declare-styleable>
+    <declare-styleable name="myTitle">
+        <attr name="left1_text" format="string"/>
+        <attr name="left2_text" format="string"/>
+        <attr name="cen_text" format="string"/>
+        <attr name="right1_text" format="string"/>
+        <attr name="right2_text" format="string"/>
+        <attr name="myBaground" format="string"/>
+        <attr name="left2_text_visable" >
+            <flag name="visible" value="0"/>
+            <flag name="gone" value="1"/>
+            <flag name="invisible" value="2"/>
+        </attr>
+
+    </declare-styleable>
+</resources>

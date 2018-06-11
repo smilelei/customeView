@@ -4,11 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:myCircle="http://schemas.android.com/apk/res-auto"
     tools:context="com.example.administrator.testcustomview.MainActivity">
 
     <com.example.administrator.testcustomview.CircleView.CircleView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        myCircle:myGravity="left"
+        myCircle:myRadious="40dp"
+        myCircle:myProgress="70"
+        myCircle:myBg="@color/colorPrimary"
+        myCircle:myProBg="@color/colorAccent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
