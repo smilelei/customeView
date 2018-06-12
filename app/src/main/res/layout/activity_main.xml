@@ -5,19 +5,33 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:myCircle="http://schemas.android.com/apk/res-auto"
+    xmlns:myTitle="http://schemas.android.com/apk/res-auto"
     tools:context="com.example.administrator.testcustomview.MainActivity">
 
-    <com.example.administrator.testcustomview.CircleView.CircleView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        myCircle:myGravity="left"
-        myCircle:myRadious="40dp"
-        myCircle:myProgress="70"
-        myCircle:myBg="@color/colorPrimary"
-        myCircle:myProBg="@color/colorAccent"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <com.example.administrator.testcustomview.CircleView.MyCustomeTitle
+        android:id="@+id/myTitle"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/colorAccent"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        myTitle:cen_text="33"
+        myTitle:left1_text="11111"
+        myTitle:right2_text="55555" />
+    <!--
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/myTitle"
+                -->
+    <com.example.administrator.testcustomview.CircleView.CircleView
+        android:id="@+id/cir"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintTop_toBottomOf="@id/myTitle"
+        myCircle:myBg="@color/colorPrimary"
+        myCircle:myGravity="left"
+        myCircle:myProBg="@color/colorAccent"
+        myCircle:myProgress="70"
+        myCircle:myRadious="40dp" />
 
 </android.support.constraint.ConstraintLayout>
