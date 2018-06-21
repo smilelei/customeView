@@ -1,4 +1,4 @@
-package com.example.administrator.testcustomview.CircleView
+package com.example.administrator.testcustomview.circleview
 
 import android.content.Context
 import android.content.res.TypedArray

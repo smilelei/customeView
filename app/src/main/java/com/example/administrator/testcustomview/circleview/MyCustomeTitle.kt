@@ -1,16 +1,13 @@
-package com.example.administrator.testcustomview.CircleView
+package com.example.administrator.testcustomview.circleview
 
-import android.annotation.SuppressLint
 import android.content.Context
 import android.content.res.TypedArray
-import android.graphics.drawable.Drawable
 import android.support.constraint.ConstraintLayout
 import android.util.AttributeSet
 import android.view.LayoutInflater
 import android.view.View
 import android.widget.TextView
 import com.example.administrator.testcustomview.R
-import org.w3c.dom.Text
 
 /**
  * Created by Administrator on 2018/6/11.

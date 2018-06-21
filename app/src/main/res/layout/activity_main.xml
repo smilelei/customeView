@@ -8,7 +8,7 @@
     xmlns:myTitle="http://schemas.android.com/apk/res-auto"
     tools:context="com.example.administrator.testcustomview.MainActivity">
 
-    <com.example.administrator.testcustomview.CircleView.MyCustomeTitle
+    <com.example.administrator.testcustomview.circleview.MyCustomeTitle
         android:id="@+id/myTitle"
         android:layout_width="match_parent"
         android:layout_height="70dp"
@@ -18,12 +18,13 @@
         myTitle:cen_text="33"
         myTitle:left1_text="11111"
         myTitle:right2_text="55555" />
+
     <!--
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@id/myTitle"
                 -->
-    <com.example.administrator.testcustomview.CircleView.CircleView
+    <com.example.administrator.testcustomview.circleview.CircleView
         android:id="@+id/cir"
         android:layout_width="100dp"
         android:layout_height="100dp"
@@ -34,4 +35,14 @@
         myCircle:myProgress="70"
         myCircle:myRadious="40dp" />
 
+    <com.example.administrator.testcustomview.rotationtextview.RotationTextView
+        android:text="eeeeeeeeeeeeeee"
+        android:textColor="@color/colorPrimary"
+        android:background="@android:color/holo_green_dark"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/cir"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
 </android.support.constraint.ConstraintLayout>
