@@ -2,57 +2,64 @@
 <resources>
     <declare-styleable name="myCircle">
         <attr name="myGravity">
-            <flag name="left" value="0"/>
-            <flag name="top" value="1"/>
-            <flag name="center" value="2"/>
-            <flag name="right" value="3"/>
-            <flag name="bottom" value="4"/>
+            <flag name="left" value="0" />
+            <flag name="top" value="1" />
+            <flag name="center" value="2" />
+            <flag name="right" value="3" />
+            <flag name="bottom" value="4" />
         </attr>
-        <attr name="myRadious" format="dimension"/>
-        <attr name="myProgress" format="integer"/>
-        <attr name="myBg" format="color"/>
-        <attr name="myProBg" format="color"/>
+        <attr name="myRadious" format="dimension" />
+        <attr name="myProgress" format="integer" />
+        <attr name="myBg" format="color" />
+        <attr name="myProBg" format="color" />
     </declare-styleable>
     <declare-styleable name="myTitle">
-        <attr name="left1_text" format="string"/>
-        <attr name="left2_text" format="string"/>
-        <attr name="cen_text" format="string"/>
-        <attr name="right1_text" format="string"/>
-        <attr name="right2_text" format="string"/>
+        <attr name="left1_text" format="string" />
+        <attr name="left2_text" format="string" />
+        <attr name="cen_text" format="string" />
+        <attr name="right1_text" format="string" />
+        <attr name="right2_text" format="string" />
 
-        <attr name="image" format="reference"/>
-        <attr name="myBaground" format="reference"/>
+        <attr name="image" format="reference" />
+        <attr name="myBaground" format="reference" />
 
-        <attr name="left1_text_visable" >
-            <flag name="visible" value="0x00000000"/>
-            <flag name="gone" value="0x00000008"/>
-            <flag name="invisible" value="0x00000004"/>
+        <attr name="left1_text_visable">
+            <flag name="visible" value="0x00000000" />
+            <flag name="gone" value="0x00000008" />
+            <flag name="invisible" value="0x00000004" />
         </attr>
 
-        <attr name="left2_text_visable" >
-            <flag name="visible" value="0x00000000"/>
-            <flag name="gone" value="0x00000008"/>
-            <flag name="invisible" value="0x00000004"/>
+        <attr name="left2_text_visable">
+            <flag name="visible" value="0x00000000" />
+            <flag name="gone" value="0x00000008" />
+            <flag name="invisible" value="0x00000004" />
         </attr>
 
-        <attr name="cen_text_visable" >
-            <flag name="visible" value="0x00000000"/>
-            <flag name="gone" value="0x00000008"/>
-            <flag name="invisible" value="0x00000004"/>
+        <attr name="cen_text_visable">
+            <flag name="visible" value="0x00000000" />
+            <flag name="gone" value="0x00000008" />
+            <flag name="invisible" value="0x00000004" />
         </attr>
 
-        <attr name="right1_text_visable" >
-            <flag name="visible" value="0x00000000"/>
-            <flag name="gone" value="0x00000008"/>
-            <flag name="invisible" value="0x00000004"/>
+        <attr name="right1_text_visable">
+            <flag name="visible" value="0x00000000" />
+            <flag name="gone" value="0x00000008" />
+            <flag name="invisible" value="0x00000004" />
         </attr>
 
-        <attr name="right2_text_visable" >
-            <flag name="visible" value="0x00000000"/>
-            <flag name="gone" value="0x00000008"/>
-            <flag name="invisible" value="0x00000004"/>
+        <attr name="right2_text_visable">
+            <flag name="visible" value="0x00000000" />
+            <flag name="gone" value="0x00000008" />
+            <flag name="invisible" value="0x00000004" />
         </attr>
 
 
+    </declare-styleable>
+    <declare-styleable name="progress">
+        <attr name="bg_color" format="color"></attr>
+        <attr name="pro_color" format="color"></attr>
+        <attr name="bar_width" format="integer"></attr>
+        <attr name="start_angle" format="float"></attr>
+        <attr name="swep_angle" format="float"></attr>
     </declare-styleable>
 </resources>

@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     xmlns:myCircle="http://schemas.android.com/apk/res-auto"
     xmlns:myTitle="http://schemas.android.com/apk/res-auto"
+    xmlns:myProgress="http://schemas.android.com/apk/res-auto"
     tools:context="com.example.administrator.testcustomview.MainActivity">
 
     <com.example.administrator.testcustomview.circleview.MyCustomeTitle
@@ -34,7 +35,29 @@
         myCircle:myProBg="@color/colorAccent"
         myCircle:myProgress="70"
         myCircle:myRadious="40dp" />
-
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/cir"
+        >
+    <com.example.administrator.testcustomview.circleprogress.MyCircleProgress
+        android:id="@+id/pro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        myProgress:bg_color="#53dd66"
+        myProgress:pro_color ="#eee355"
+        myProgress:bar_width="20"
+        myProgress:start_angle="135"
+        myProgress:swep_angle="270"
+        />
+    <TextView
+        android:id="@+id/tx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text=""
+        />
+    </RelativeLayout>
     <com.example.administrator.testcustomview.rotationtextview.RotationTextView
         android:text="eeeeeeeeeeeeeee"
         android:textColor="@color/colorPrimary"
