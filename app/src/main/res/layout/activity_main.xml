@@ -7,8 +7,15 @@
     xmlns:myCircle="http://schemas.android.com/apk/res-auto"
     xmlns:myTitle="http://schemas.android.com/apk/res-auto"
     xmlns:myProgress="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary"
     tools:context="com.example.administrator.testcustomview.MainActivity">
-
+  <!-- <com.example.administrator.testcustomview.circleprogress.SnowView
+       android:id="@+id/snow"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       app:layout_constraintTop_toBottomOf="@id/myTitle"
+       />
+-->
     <com.example.administrator.testcustomview.circleview.MyCustomeTitle
         android:id="@+id/myTitle"
         android:layout_width="match_parent"
@@ -36,6 +43,7 @@
         myCircle:myProgress="70"
         myCircle:myRadious="40dp" />
     <RelativeLayout
+        android:id="@+id/re"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/cir"
@@ -58,13 +66,19 @@
         android:text=""
         />
     </RelativeLayout>
+    <com.example.administrator.testcustomview.circleprogress.EarthView
+        android:id="@+id/earth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/re"
+        />
     <com.example.administrator.testcustomview.rotationtextview.RotationTextView
         android:text="eeeeeeeeeeeeeee"
         android:textColor="@color/colorPrimary"
         android:background="@android:color/holo_green_dark"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_constraintTop_toBottomOf="@id/cir"
+        app:layout_constraintTop_toBottomOf="@id/earth"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         />

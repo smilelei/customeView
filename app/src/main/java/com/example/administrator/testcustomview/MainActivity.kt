@@ -1,13 +1,13 @@
 package com.example.administrator.testcustomview
 
-import android.graphics.Color
-import android.graphics.LinearGradient
-import android.graphics.Paint
+import android.graphics.*
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Window
 import com.example.administrator.testcustomview.Util.LinearGradientUtil
+import com.example.administrator.testcustomview.circleprogress.FallObject
 import com.example.administrator.testcustomview.circleprogress.MyCircleProgress
+import com.example.administrator.testcustomview.circleprogress.SnowView
 import kotlinx.android.synthetic.main.activity_main.*
 import java.text.DecimalFormat
 
@@ -18,7 +18,6 @@ class MainActivity : AppCompatActivity() {
         requestWindowFeature(Window.FEATURE_NO_TITLE)
         supportActionBar!!.hide()
         setContentView(R.layout.activity_main)
-
         //var pro: MyCircleProgress = findViewById(MyCircleProgress)(R.id.pro)
         //pro.setProgressTime(8000)
         pro.setText(tx)
@@ -39,5 +38,20 @@ class MainActivity : AppCompatActivity() {
             })
         }
         pro.steNum(60,8000)
+
+        var snowPaint: Paint = Paint()
+        snowPaint.style = Paint.Style.FILL
+        snowPaint.color = Color.WHITE
+
+        var bitmap: Bitmap = Bitmap.createBitmap(50,50,Bitmap.Config.ARGB_8888)
+        var canvas: Canvas = Canvas(bitmap)
+        canvas.drawCircle(25f,25f,25f,snowPaint)
+
+
+        var build: FallObject.Builder = FallObject.Builder(bitmap)
+        var fallObject: FallObject = build.setSpeed(50).build();
+        earth.setTime(3000)
+       // snow.addFallObject(fallObject,50)
+
     }
 }
